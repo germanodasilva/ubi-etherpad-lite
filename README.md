@@ -1,5 +1,5 @@
-# ubi-etherpad
-[![Docker Repository on Quay](https://quay.io/repository/davivcgarcia/ubi-gogs/status "Docker Repository on Quay")](https://quay.io/repository/davivcgarcia/ubi-gogs)
+# ubi-etherpad-lite
+[![Docker Repository on Quay](https://quay.io/repository/gedasilv/ubi-etherpad-lite/status "Docker Repository on Quay")](https://quay.io/repository/gedasilv/ubi-etherpad-lite)
 
 Unofficial image for Gogs based on Red Hat Universal Base Image v8
 
@@ -12,19 +12,7 @@ This image was build using the [Red Hat Universal Base Image (UBI) 8](https://de
 If you running standalone containers, you can use `podman` or `docker` with:
 
 ```bash
-podman run -d -p 3000:3000 quay.io/davivcgarcia/ubi-etherpad
-```
-
-If you running containers on Kubernetes (including the OpenShift distribution), and have Dynamic Provisioning for storage enabled, you can use `kubectl` or `oc` to deploy a `StatefulSet` with:
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/davivcgarcia/ubi-gogs/master/resources/openshift-statefulset.yaml
-```
-
-Or, if you prefer to use `Deployment` controller, use:
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/davivcgarcia/ubi-gogs/master/resources/openshift-deployment.yaml
+podman run -d -p 3000:3000 quay.io/repository/gedasilv/ubi-etherpad-lite
 ```
 
 ## Any support?
