@@ -9,6 +9,7 @@ ENV ETHERPAD_HOMEDIR /home/${ETHERPAD_USER}
 ENV ETHERPAD_BIN ${ETHERPAD_WORKDIR}/etherpad-lite/bin
 
 
+## NOVO COMENTARIO
 #ADD helpers ${ETHERPAD_WORKDIR}/helpers
 
 RUN yum -y install git nodejs && \
